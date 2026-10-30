@@ -23,6 +23,11 @@ html{scroll-behavior:smooth}
   h2{font-size:26px !important}
   [style*="padding: 64px 32px"],[style*="padding: 72px 32px"],[style*="padding: 60px 32px"],[style*="padding: 56px 32px"]{padding-left:20px !important;padding-right:20px !important}
   [style*="padding: 40px;"],[style*="padding: 36px;"]{padding:24px !important}
+  [data-snake-row]{flex-direction:column !important;height:auto !important;padding:0 !important;gap:14px;align-items:stretch}
+  [data-snake-row]>div{flex-direction:row !important;text-align:left !important;align-items:baseline !important;gap:10px !important}
+  [data-snake-row]>div>span:first-child{flex-shrink:0;width:14px;height:14px}
+  [data-snake-line],[data-snake-turn]{display:none}
+  [data-snake]{gap:14px}
 }
 </style>
 </head>
@@ -34,7 +39,7 @@ html{scroll-behavior:smooth}
 <img src="assets/promitei-data-logo-s.png" alt="Promitei Data" style="height: 44px; width: auto">
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 22px; align-items: center; font-size: 15px; font-weight: 600">
 <a href="#why" style="color: #2B3440; text-decoration: none">Why us</a>
-<a href="#data" style="color: #2B3440; text-decoration: none">Our data</a>
+<a href="hospital-partner.html" style="color: #2B3440; text-decoration: none">Data source</a>
 <a href="#partners" style="color: #2B3440; text-decoration: none">Partners</a>
 <a href="#how" style="color: #2B3440; text-decoration: none">How we work</a>
 <a href="about-promitei.html" style="color: #2B3440; text-decoration: none">About us</a>

@@ -23,6 +23,11 @@ html{scroll-behavior:smooth}
   h2{font-size:26px !important}
   [style*="padding: 64px 32px"],[style*="padding: 72px 32px"],[style*="padding: 60px 32px"],[style*="padding: 56px 32px"]{padding-left:20px !important;padding-right:20px !important}
   [style*="padding: 40px;"],[style*="padding: 36px;"]{padding:24px !important}
+  [data-snake-row]{flex-direction:column !important;height:auto !important;padding:0 !important;gap:14px;align-items:stretch}
+  [data-snake-row]>div{flex-direction:row !important;text-align:left !important;align-items:baseline !important;gap:10px !important}
+  [data-snake-row]>div>span:first-child{flex-shrink:0;width:14px;height:14px}
+  [data-snake-line],[data-snake-turn]{display:none}
+  [data-snake]{gap:14px}
 }
 </style>
 </head>
@@ -34,7 +39,7 @@ html{scroll-behavior:smooth}
 <a href="index.html"><img src="assets/promitei-data-logo-s.png" alt="Promitei Data — home" style="height: 44px; width: auto; display: block"></a>
 <nav aria-label="Main" style="display: flex; flex-wrap: wrap; gap: 22px; align-items: center; font-size: 15px; font-weight: 600">
 <a href="index.html#why" style="color: #2B3440; text-decoration: none">Why us</a>
-<a href="index.html#data" style="color: #2B3440; text-decoration: none">Our data</a>
+<a href="hospital-partner.html" style="color: #2B3440; text-decoration: none">Data source</a>
 <a href="index.html#partners" style="color: #2B3440; text-decoration: none">Partners</a>
 <a href="index.html#how" style="color: #2B3440; text-decoration: none">How we work</a>
 <a href="about-promitei.html" style="color: #2B3440; text-decoration: none">About us</a>
@@ -83,6 +88,17 @@ html{scroll-behavior:smooth}
 <div style="display: flex; flex-direction: column; gap: 14px">
 <h2 style="margin: 0; font-size: 34px; font-weight: 800">About the hospital</h2>
 <p style="margin: 0; font-size: 16px; line-height: 1.65; color: #55606E">Sri Ramakrishna Hospital (SRH) has served Coimbatore, Tamil Nadu, since 1975. Established and run by the SNR Sons Charitable Trust, it is a 1,000+ bed multispeciality hospital on an 18-acre campus in the heart of the city. It has a new 230-bed super speciality block and 1,400+ qualified staff, with over 1 million patients treated.</p><p style="margin: 0; font-size: 16px; line-height: 1.65; color: #55606E">SRH has been NABH accredited since 2017 and holds NABH Digital Health accreditation at Gold Level and NABL accreditation for medical laboratories. It has trained doctors in NBEMS postgraduate programmes since 1995, and its registered Ethics Committee reviews Phase 3 and 4 trials and observational studies.</p>
+
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span aria-hidden="true" style="flex-shrink: 0; width: 8px; height: 8px; margin-top: 8px; border-radius: 2px; background: #2F8FD0"></span>
+<div><div style="font-size: 16px; font-weight: 700">Urban and rural populations</div><div style="font-size: 15px; line-height: 1.5; color: #55606E">Two rural health centres, in Pachapalayam and Vattamalaipalayam, and an urban health centre extend care beyond the main campus, so the data covers both rural and urban populations.</div></div>
+</div>
+
+<div style="display: flex; gap: 12px; align-items: flex-start">
+<span aria-hidden="true" style="flex-shrink: 0; width: 8px; height: 8px; margin-top: 8px; border-radius: 2px; background: #2F8FD0"></span>
+<div><div style="font-size: 16px; font-weight: 700">International patients</div><div style="font-size: 15px; line-height: 1.5; color: #55606E">Patients from Bangladesh, the Maldives, Kenya, Rwanda, Sri Lanka and the Philippines.</div></div>
+</div>
+
 </div>
 <div style="display: flex; flex-direction: column; gap: 16px">
 <h3 style="margin: 0; font-size: 20px; font-weight: 700">Why its data is deep</h3>
@@ -110,186 +126,208 @@ html{scroll-behavior:smooth}
 </div>
 </section>
 
-<section id="history" style="max-width: 1160px; margin: 0 auto; padding: 40px 32px; display: flex; flex-direction: column; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 8px; max-width: 760px">
-<h2 style="margin: 0; font-size: 34px; font-weight: 800">50 years of clinical firsts</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #55606E">Continuous operation since 1975, with landmark procedures across specialities.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px">
+<section id="firsts" style="max-width: 1160px; margin: 0 auto; padding: 40px 32px; display: flex; flex-direction: column; gap: 22px">
+<h2 style="margin: 0; font-size: 34px; font-weight: 800">50+ years of being the first</h2>
+<div data-snake style="display: flex; flex-direction: column; padding: 4px 0 0">
 
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">1975</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Hospital opens in Coimbatore.</span>
-</div>
+<div data-snake-row style="position: relative; height: 156px; display: flex; flex-direction: row; padding: 0 30px">
+<div data-snake-line style="position: absolute; top: 10px; left: 30px; right: 30px; height: 2px; background: #9CCBEA"></div>
+<div data-snake-turn style="position: absolute; top: 10px; width: 30px; height: 158px; box-sizing: border-box; border: 2px solid #9CCBEA; right: 0; border-left: none; border-radius: 0 78px 78px 0;"></div>
 
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">1980</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">First kidney transplant in Coimbatore.</span>
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">1975</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Hospital opens in Coimbatore</span>
 </div>
 
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">1991</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Tamil Nadu&#x27;s first IVF baby.</span>
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">1980</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">First kidney transplant in Coimbatore</span>
 </div>
 
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">1999</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Arterial switch operation on a six-day-old infant, first in Coimbatore.</span>
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">1991</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Tamil Nadu&#x27;s first IVF baby</span>
 </div>
 
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2000</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Off-pump coronary artery bypass surgery, first in Coimbatore.</span>
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">1999</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Arterial switch on a six-day-old infant, first in Coimbatore</span>
 </div>
 
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2003</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Linear accelerator for radiation therapy, first in Coimbatore.</span>
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2000</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Off-pump coronary bypass surgery, first in Coimbatore</span>
 </div>
 
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2004</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Limb salvage surgery for cancer, first in Coimbatore.</span>
-</div>
-
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2006</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Bone marrow transplant, first in Coimbatore.</span>
-</div>
-
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2013</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Coimbatore&#x27;s first comprehensive cancer centre: medical, radiation and surgical oncology under one roof.</span>
-</div>
-
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2016</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Guinness World Record: 13,206 organ donation pledges in eight hours.</span>
-</div>
-
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2018</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">First in India to install the Revolution CT scanner.</span>
-</div>
-
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2025</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">India&#x27;s first inter-hospital swap liver transplant, with GEM Hospital.</span>
-</div>
-
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2025</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">45,861 organ donation pledges, a record certified by the World Records Union.</span>
-</div>
-
-<div style="border-left: 3px solid #2F8FD0; background: #F3F7FB; border-radius: 0 8px 8px 0; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
-<span style="font-size: 18px; font-weight: 800; color: #1F7AB8">2026</span>
-<span style="font-size: 14px; line-height: 1.45; color: #2B3440">Golden Jubilee: 50 years, celebrated in the presence of the Vice President of India.</span>
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2003</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Linear accelerator for radiotherapy, first in Coimbatore</span>
 </div>
 
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; margin-top: 8px">
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px">
-<div style="font-size: 17px; font-weight: 700">Urban and rural populations</div>
-<div style="font-size: 15px; line-height: 1.55; color: #55606E">Two rural health centres, in Pachapalayam and Vattamalaipalayam, and an urban health centre extend care beyond the main campus, so the data covers both rural and urban populations.</div>
+<div data-snake-row style="position: relative; height: 156px; display: flex; flex-direction: row-reverse; padding: 0 30px">
+<div data-snake-line style="position: absolute; top: 10px; left: 30px; right: 30px; height: 2px; background: #9CCBEA"></div>
+
+
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2004</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Limb salvage surgery for cancer, first in Coimbatore</span>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px">
-<div style="font-size: 17px; font-weight: 700">International patients</div>
-<div style="font-size: 15px; line-height: 1.55; color: #55606E">Patients from Bangladesh, the Maldives, Kenya, Rwanda, Sri Lanka and the Philippines.</div>
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2006</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Bone marrow transplant, first in Coimbatore</span>
+</div>
+
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2013</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Coimbatore&#x27;s first comprehensive cancer centre</span>
+</div>
+
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2018</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">First Revolution CT scanner in India</span>
+</div>
+
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2025</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">India&#x27;s first inter-hospital swap liver transplant, with GEM Hospital</span>
+</div>
+
+<div style="position: relative; flex: 1 1 0; min-width: 0; padding: 0 8px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px">
+<span aria-hidden="true" style="width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: #FFFFFF; border: 3px solid #2F8FD0; box-sizing: border-box"></span>
+<span style="font-size: 17px; font-weight: 800; color: #1F7AB8">2026</span>
+<span style="font-size: 13px; line-height: 1.4; color: #2B3440">Golden Jubilee, with the Vice President of India</span>
 </div>
 
 </div>
-</section>
 
-<section id="achievements" style="max-width: 1160px; margin: 0 auto; padding: 40px 32px; display: flex; flex-direction: column; gap: 24px">
-<h2 style="margin: 0; font-size: 34px; font-weight: 800">Accreditations and achievements</h2>
-<p style="margin: -12px 0 0; font-size: 15px; color: #55606E">As published by Sri Ramakrishna Hospital.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px">
+</div>
+<h3 style="margin: 8px 0 0; font-size: 20px; font-weight: 700">Accreditations and awards</h3>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px">
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2017</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">NABH accredited hospital</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">National Accreditation Board for Hospitals accreditation received on 11 April 2017.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">NABH accredited hospital</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">Since 11 April 2017</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8"></span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">NABH Digital Health accreditation, Gold Level</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">NABH Digital Health Standards award at Gold Level.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">NABH Digital Health</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">Gold Level</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2026</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">NABL accreditation</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Accreditation for medical laboratories under NABL.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">NABL accreditation</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">Medical laboratories, 2026</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8"></span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Tamil Nadu&#x27;s first Comprehensive Chest Pain Center</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Certified by the American Heart Association.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Comprehensive Chest Pain Center</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">American Heart Association; first in Tamil Nadu</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2024</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Advanced Stroke Centre</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Accredited by QAI, Centre for Accreditation of Health and Social Care. First in Coimbatore to use thrombolysis for stroke.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Advanced Stroke Centre</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">QAI, 2024; first in Coimbatore to use thrombolysis for stroke</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2025</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">NABH-accredited Ethics Committee</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Certified by NABH to its Ethics Committee standards (clinical trial programme).</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">NABH-accredited Ethics Committee</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">Clinical trial programme, 2025</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">1991</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Tamil Nadu&#x27;s first IVF baby</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Delivered at Sri Ramakrishna Hospital in 1991.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Guinness World Record</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">2016: 13,206 organ donation pledges in eight hours</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">1980</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Kidney transplants since 1980</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">First haemodialysis unit installed and the first kidney transplant in Coimbatore performed in 1980.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">World Records Union</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">2025: 45,861 organ donation pledges</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8"></span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Southern Tamil Nadu&#x27;s first tomotherapy</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Radixact X9 tomotherapy at the Sri Ramakrishna Institute of Oncology and Research (SRIOR).</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Southern Tamil Nadu&#x27;s first tomotherapy</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">Radixact X9 at the Sri Ramakrishna Institute of Oncology and Research</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2026</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Excellence in Multi-Specialty Healthcare, Tamil Nadu</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">ET Now Business Summit Conclave &amp; Awards 2026.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Times Health Achievers Tamil Nadu</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">2026, cancer care</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2025</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Excellence in Multi-Specialty Hospital, Kongu Region</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">India Health Summit 2025.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Excellence in Multi-Specialty Healthcare, Tamil Nadu</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">ET Now Business Summit Conclave &amp; Awards 2026</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2026</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Times Health Achievers Tamil Nadu 2026</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Recognised for cancer care.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Excellence in Multi-Specialty Hospital, Kongu Region</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">India Health Summit 2025</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2024</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Best In-House Diagnostic Service (South)</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Innovation Excellence Award from Voice of Healthcare, Mumbai.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Best In-House Diagnostic Service (South)</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">Voice of Healthcare, Mumbai, 2024</div>
+</div>
 </div>
 
-<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 6px">
-<span style="font-size: 12px; font-weight: 700; color: #1F7AB8">2023</span>
-<div style="font-size: 16px; font-weight: 700; line-height: 1.35">Excellence in Diagnostic Lab</div>
-<div style="font-size: 14px; line-height: 1.45; color: #55606E">Confederation of Indian Industry, TN Med Conclave, Chennai.</div>
+<div style="border: 1px solid #E3E8EE; border-radius: 10px; padding: 14px 16px; display: flex; gap: 14px; align-items: center">
+
+<div style="display: flex; flex-direction: column; gap: 3px; min-width: 0">
+<div style="font-size: 15px; font-weight: 700; line-height: 1.3">Excellence in Diagnostic Lab</div>
+<div style="font-size: 13px; line-height: 1.4; color: #55606E">CII TN Med Conclave, Chennai, 2023</div>
+</div>
 </div>
 
 </div>
